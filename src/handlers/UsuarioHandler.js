@@ -31,7 +31,7 @@ const Usuarios = require('../model/Usuario')
 
         const usuarios = await Usuarios.findOneAndDelete({id})
         
-        res.json(usuarios.nome + " Deletado com sucesso ! ")
+        res.json(usuarios.nome + " Deletado com sucesso ! " )
     },
 
     async update (req,res){
